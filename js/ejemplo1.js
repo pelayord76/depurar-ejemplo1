@@ -8,20 +8,27 @@
 
 /* Encontrar los errores que tiene el siguiente script, usando las herramientas de depuración de Google Chrome */
 
-var nombres=[];
+let numeroNombres = 10;
 
-var NUMERO_NOMBRES=10;
+var nombres = [];
 
+function pintarNombres(num, nombres){
+    for(let i = 0; i<num; i++){
+        let nombre = prompt("Escribe un nombre");
+        nombres[i] = nombre;
+    }
+    return nombres;
+}
 
-
+let resultado = pintarNombres(numeroNombres, nombres);
+console.log(resultado);
+alert(resultado);
 
 /* AVISOS (WARNING) */
-console.warn("Mensaje warn");
+console.warn("warning");
 /* ERRORES */
-console.error("Mensaje err");
+console.error("error");
 /* INFORMACIÓN (LOG) */
 console.log("Mensaje log");
 /* DEPURACIÓN (DEBUG) */
 console.debug("Mensaje deb");
- 
-
